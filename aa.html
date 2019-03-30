@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled outr64rdyryrr");
+    return false;
+  }
+}
+function nikunj()
+{
+	alert('ggg');
+	return true;
+}
+
+function xx()
+{
+	var nn=false;
+	var b=nikunj();
+	var a=validateForm();
+	if(b==false)
+	{
+		alert(b);
+		nn=false;
+	}
+	else if(a==false)
+	{
+		alert(a);
+		nn=false;
+	}
+	else
+	{
+		nn=true;
+	}
+	
+	
+
+	// if(validateForm()===true)
+	// {
+	// 	alert('jj');
+	// }
+	// if(aaa(nn)===true)
+	// {
+	// 	alert('kk');
+	// }
+	
+	return nn;
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="/action_page.php" onsubmit="return xx();" method="post">
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
